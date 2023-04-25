@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --background-color: #0b1121;
+    --fullname-color: #fff;
+    --role: #38bdf8;
+    --paragraph-text: #94a3b8;
+    --technology-text: #cbd5e1;
+    --button-bg: #0ea5e9;
+
+    --font: 'Inter', sans-serif;
+    --padding: 8px;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    width: 40vw;
+    border-radius: 20%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.name {
+    color: var(--fullname-color);
+    font-size: 2em;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.role {
+    color: var(--role);
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.description-container {
+    width: 90vw;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    color: var(--paragraph-text);
+    font-weight: 400;
+    text-align: center;
+}
+
+.social-container {
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin: 0 8px 0 8px;
+}
+
+.projects-row {
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    align-self: center;
+    gap: 16px;
+    overflow: scroll;
+}
+
+.project-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 270px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: #1e293b;
+}
+
+.project-container-technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container-technologies img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.project-name {
+    color: var(--role);
+    font-weight: 800;
+    padding: 0;
+    margin-bottom: 8px;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.project-technologies-name {
+    color: var(--technology-text);
+    white-space: normal;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.project-description {
+    color: var(--paragraph-text);
+    overflow-wrap: break-word;
+}
+
+.github-repo-link {
+    display: flex;
+    align-items: center;
+    background-color: var(--button-bg);
+    padding: var(--padding);
+    border-radius: 5px;
+    max-width: 100px;
+    font-weight: 600;
+    color: var(--fullname-color)
+}
+
+.github-repo-icon {
+    margin-right: var(--padding);
+}
+
+.footer-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-email {
+    padding: 0;
+    color: var(--paragraph-text);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .name {
+        text-align: center;
+    }
+
+    .role {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        align-self: center;
+        width: 70%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .photo {
+        width: 25%;
+    }
+
+    .description-container {
+        width: 40vw;
+    }
+
+    .description {
+        text-align: left;
+    }
+
+    .description-container .social-container {
+        align-self: flex-start;
+    }
+
+    .projects-row {
+        width: 70vw;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .project-container {
+        width: 275px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .photo {
+        width: 20%;
+    }
+
+    .project-container {
+        width: 330px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .photo {
+        width: 15%;
+    }
+
+    .project-container {
+        width: 405px;
+    }
+}
