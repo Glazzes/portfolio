@@ -9,7 +9,8 @@
     --button-bg: #0ea5e9;
 
     --font: 'Inter', sans-serif;
-    --padding: 8px;
+    --padding: 16px;
+    --button-padding: 8px;
 }
 
 body {
@@ -93,19 +94,21 @@ footer {
 }
 
 .project-container {
+    display: flex;
+    flex-direction: column;
     flex-grow: 0;
     flex-shrink: 0;
     width: 270px;
-    padding: 12px 16px;
+    padding: var(--padding);
     border-radius: 10px;
     background-color: #1e293b;
+    justify-content: space-between;
 }
 
 .project-container-technologies {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 .project-container-technologies img {
@@ -118,14 +121,13 @@ footer {
     color: var(--role);
     font-weight: 800;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     height: 1rem;
     line-height: 1rem;
 }
 
 .project-technologies-name {
     color: var(--technology-text);
-    white-space: normal;
     height: 1rem;
     line-height: 1rem;
 }
@@ -139,11 +141,11 @@ footer {
     display: flex;
     align-items: center;
     background-color: var(--button-bg);
-    padding: var(--padding);
+    padding: var(--button-padding);
     border-radius: 5px;
     max-width: 100px;
     font-weight: 600;
-    color: var(--fullname-color)
+    color: var(--fullname-color);
 }
 
 .github-repo-icon {
