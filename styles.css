@@ -3,7 +3,7 @@
 :root {
     --background-color: #0b1121;
     --fullname-color: #fff;
-    --role: #38bdf8;
+    --subtitle: #38bdf8;
     --paragraph-text: #94a3b8;
     --technology-text: #cbd5e1;
     --button-bg: #0ea5e9;
@@ -19,14 +19,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px;
+    margin: 5% 0 5% 0;
     padding: 0px;
 }
 
 main {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
 }
 
 a {
@@ -37,13 +39,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: var(--padding);
 }
 
 .photo {
     width: 40vw;
     border-radius: 20%;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
 }
 
 .name {
@@ -52,17 +53,18 @@ footer {
     font-weight: 800;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-.role {
-    color: var(--role);
+.subtitle {
+    color: var(--subtitle);
     font-weight: 600;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .description-container {
-    width: 90vw;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -84,13 +86,40 @@ footer {
     margin: 0 8px 0 8px;
 }
 
+.skill-container {
+    display: flex;
+    align-self: center;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-name {
+    color: var(--technology-text);
+    text-align: center;
+}
+
+.skill-image {
+    width: 50%;
+}
+
 .projects-row {
-    width: 90vw;
+    width: 90%;
     display: flex;
     margin: auto;
     align-self: center;
-    gap: 16px;
+    gap: var(--padding);
     overflow: scroll;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
 }
 
 .project-container {
@@ -118,7 +147,7 @@ footer {
 }
 
 .project-name {
-    color: var(--role);
+    color: var(--subtitle);
     font-weight: 800;
     padding: 0;
     margin-bottom: 0px;
@@ -164,32 +193,59 @@ footer {
     color: var(--paragraph-text);
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-    .name {
-        text-align: center;
+@media (min-width: 320px) and (max-width: 374px) {
+    .project-container {
+        width: 225px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    main {
+        align-self: center;
+        width: 80%;
+        display: flex;
     }
 
-    .role {
-        text-align: center;
+    .photo {
+        width: 30%;
+    }
+
+    .projects-row {
+        width: 80%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 912px) {
+    .skill-container {
+        width: 80%;
+    }
+    
+    .skill {
+        width: 20%;
     }
 }
 
 @media (min-width: 1024px) {
     main {
-        align-self: center;
-        width: 70%;
-        display: flex;
+        width: 80%;
         flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    .name {
+        text-align: left;
+    }
+
+    .subtitle {
+        text-align: left;
     }
 
     .photo {
-        width: 25%;
+        width: 20%;
     }
 
     .description-container {
-        width: 40vw;
+        width: 70%;
     }
 
     .description {
@@ -201,32 +257,58 @@ footer {
     }
 
     .projects-row {
-        width: 70vw;
         flex-wrap: wrap;
         overflow: visible;
     }
-
-    .project-container {
-        width: 275px;
-    }
 }
 
-@media (min-width: 1600px) {
-    .photo {
-        width: 20%;
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .projects-row {
+        width: 80%;
+        background-color: "lime";
     }
 
     .project-container {
-        width: 330px;
+        width: calc((92% - 16px) / 2);
+    }
+
+    .skill-container {
+        width: 80%;
+    }
+    
+    .skill {
+        width: 16.6%;
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1280px) {
+    body {
+        margin: 32px 0 32px 0;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .skill-container {
+        width: 70%;
+    }
+
+    .projects-row {
+        width: 70%;
+    }
+
+    .project-container {
+        width: calc(33% - 40px);
+    }
+
+    .skill {
+        width: 8.3%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
     .photo {
         width: 15%;
-    }
-
-    .project-container {
-        width: 405px;
     }
 }
