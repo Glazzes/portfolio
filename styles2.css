@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --font: 'Inter', sans-serif;
+    --bg-main: #070707;
+    --bg-secondary: #fff;
+    --text-main-color: #fff;
+    --text-color-secondary: #828282;
+    --button-bg-color: #1f1f1f;
+    --vibrant-color: #3b43ff;
+    --p1: 8px;
+    --p2: 16px;
+    --p4: 32px;
+    --p5: 48px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+}
+
+/* Landing page section */
+.menu {
+    height: 64px;
+    width: 100%;
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.menu-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.santiago {
+    font-family: var(--font);
+    font-weight: 800;
+    color: var(--text-main-color);
+    margin: 0px;
+}
+
+.santiago span {
+    color: var(--vibrant-color)
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greeting {
+    padding: var(--p2);
+    border-radius: 32px;
+    background-color: var(--button-bg-color);
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--text-main-color);
+    position: relative;
+}
+
+.greeting-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 0px 50%;
+    position: absolute;
+    top: -50px;
+    left: -60px;
+}
+
+.headline {
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+}
+
+#build::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 120px;
+    padding: 0 16px 0 16px;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.view-projects-button {
+    text-decoration: none;
+    background-color: var(--vibrant-color);
+    margin-right: var(--p2);
+    box-shadow: 0px 0px 10px var(--vibrant-color); 
+}
+
+.available-container-button {
+    background-color: var(--button-bg-color);
+}
+
+.available-badge {
+    width: 10px;
+    height: 10px;
+    margin-right: var(--p1);
+    border-radius: 50%;
+    background-color: #2ea63d;
+}
+
+.subtitle {
+    font-family: var(--font);
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-color-secondary);
+    max-width: 50%;
+}
+
+/* About me section */
+.about-me {
+    width: 100vw;
+    height: 100vh;
+    background-color: #effcf3;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-container {
+    width: 70%;
+}
+
+.about-me-headline {
+    font-family: var(--font);
+    font-weight: 800;
+    color: var(--bg-main);
+    font-size: 50px;
+}
+
+#whoami::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.about-me-information {
+    font-family: var(--font);
+    font-weight: 400;
+    max-width: 80%;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--bg-main);
+    display: flex;
+    gap: var(--p2);
+    justify-content: center;
+    padding: var(--p4);
+}
+
+.footer-wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--p4);
+}
+
+.footer-main-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-additional-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--text-main-color);
+    margin: 0px;
+}
+
+.name span {
+    color: var(--vibrant-color)
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.separator {
+    width: var(--p1);
+}
+
+.footer-title {
+    font-family: var(--font);
+    font-weight: 800;
+    color: var(--text-main-color);
+    margin: 0px;
+}
+
+.footer-item {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-color-secondary);
+    list-style: none;
+    margin: 0px;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.made-by-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    color: var(--text-color-secondary);
+    gap: var(--p1);
+}
