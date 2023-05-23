@@ -1,0 +1,13 @@
+:root {
+    --font: 'Inter', sans-serif;
+    --bg-main: #070707;
+    --bg-secondary: #fff;
+    --text-main-color: #fff;
+    --text-color-secondary: #828282;
+    --button-bg-color: #1f1f1f;
+    --vibrant-color: #3b43ff;
+    --p1: 8px;
+    --p2: 16px;
+    --p4: 32px;
+    --p5: 48px;
+}

@@ -1,0 +1,31 @@
+@import "./variables.css";
+
+.about-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #effcf3;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    width: 70%;
+}
+
+.about-me-headline {
+    font-family: var(--font);
+    font-weight: 800;
+    color: var(--bg-main);
+    font-size: 50px;
+}
+
+#whoami::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.about-me-information {
+    font-family: var(--font);
+    font-weight: 400;
+    max-width: 80%;
+}
