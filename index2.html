@@ -9,8 +9,8 @@
     <title>Santiago</title>
 </head>
 <body>
-    <nav class="menu">
-        <div class="menu-container">
+    <nav class="container menu">
+        <div class="enclosed-container menu-container">
             <p class="name">Santiago<span>.</span></p>
             <div class="social-container">
                 <a href="https://github.com/Glazzes" target="_blank">
@@ -23,8 +23,8 @@
             </div>
         </div>
     </nav>
-    <main class="landing">
-        <div class="landing-container">
+    <main class="container landing">
+        <div class="enclosed-container landing-container">
             <div class="greeting">
                 Hi there! I'm Santiago 👋
                 <img src="./assets/images/me-2.png" class="greeting-image" />
@@ -46,8 +46,8 @@
         </div>
     </main>
 
-    <article id="about" class="about-me-container">
-        <div class="about-me">
+    <article id="about" class="container about-me-container">
+        <div class="enclosed-container about-me">
             <div class="skills-container">
                 <h2 class="about-me-headline">
                     <span id="whoami">Who am i? &</span><span>What am i good at?</span>
@@ -62,6 +62,7 @@
                     <span class="chip">React Native</span>
                     <span class="chip">PostgreSQL</span>
                     <span class="chip">Docker</span>
+                    <span class="chip">CI pipelines</span>
                     <span class="chip">Familiar with cloud computing</span>
                     <span class="chip">Familiar with kubernetes</span>
                 </div>
@@ -82,12 +83,71 @@
     </article>
 
 
-    <div id="projects" class="project-root">
-        <div class="project-container">
+    <div id="projects" class="container project-root">
+        <div class="enclosed-container project-container">
             <h2 class="projects-title">Software projects</h2>
             <div class="projects">
-                <div class="project-item">
 
+                <div class="project-item">
+                    <h4 class="project-name">QR code login</h4>
+                    <p class="project-description">
+                        Authentication flow built on top of Spring Security architecture to
+                        resemble QR code login feature as seen in many main stream apps.
+                    </p>
+                    <p class="project-description">
+                        Includes web application, mobile application and a backend application.
+                    </p>
+                    <div class="project-links-container">
+                        <a href="" target="_blank" class="project-link">
+                            <span>Video explanation</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Live demo</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Github</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h4 class="project-name">Kio file manager</h4>
+                    <p class="project-description">
+                        Mobile file manager application, where users can store their files on a 
+                        remote server where they can upload, download, visualize and share them through
+                        the app.
+                    </p>
+                    <p class="project-description">
+                        Includes a mobile application and a backend application.
+                    </p>
+                    <div class="project-links-container">
+                        <a href="" target="_blank" class="project-link">
+                            <span>See screenshots</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Github</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="project-item">
@@ -95,14 +155,58 @@
                 </div>
 
                 <div class="project-item">
-
+                    <h4 class="project-name">Autumn DI Container</h4>
+                    <p class="project-description">
+                        A dependency injection container library based on Spring Boot's API, 
+                        this one was made only with Java's core to provide the following features: 
+                        Circular dependency detection, bean quialification, multi project support through 
+                        "Jar in Jar inrospection" to project's dependencies
+                    </p>
+                    <div class="project-links-container">
+                        <a href="" target="_blank" class="project-link">
+                            <span>Maven central page</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Github</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="project-item">
-
+                <div class="project-item" name="hidden-project" style="display: none;">
+                    <h4 class="project-name">Autumn DI Container</h4>
+                    <p class="project-description">
+                        A dependency injection container library based on Spring Boot's API, 
+                        this one was made only with Java's core to provide the following features: 
+                        Circular dependency detection, bean quialification, multi project support through 
+                        "Jar in Jar inrospection" to project's dependencies
+                    </p>
+                    <div class="project-links-container">
+                        <a href="" target="_blank" class="project-link">
+                            <span>Maven central page</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Github</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#3b43ff" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
-                <div onclick="" id="load-more" class="project-item load-more">
+                <div id="load-more" class="project-item load-more">
                     <p>5 more</p>
                     <svg enable-background="new 0 0 32 32" height="48" width="48" viewBox="0 0 32 32">
                         <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#fff" fill-rule="evenodd" id="Arrow_Forward"/>
@@ -113,8 +217,8 @@
         </div>
     </div>
 
-    <footer id="footer">
-        <div class="footer-wrapper">
+    <footer id="contact" class="container footer">
+        <div class="enclosed-container footer-wrapper">
             <div class="footer-main-info-container">
                 <div>
                     <p class="name">Santiago<span>.</span></p>
@@ -166,4 +270,6 @@
         </div>
     </footer>
 </body>
+
+<script src="./scripts/script.js"></script>
 </html>
