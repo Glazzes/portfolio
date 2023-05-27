@@ -114,11 +114,6 @@ body {
     margin: 0px;
 }
 
-#build::after {
-    content: "\a";
-    white-space: pre;
-}
-
 .subtitle {
     font-family: var(--font);
     font-weight: 400;
@@ -163,6 +158,24 @@ body {
     background-color: #2ea63d;
 }
 
+@media (max-width: 320px) {
+    .enclosed-container {
+        width: 90%;
+        max-width: calc(320px * 0.9);
+    }
+
+    .landing {
+        height: 700px;
+    }
+}
+
+@media(min-width: 375px) {
+    #build::after {
+        content: "\a";
+        white-space: pre;
+    }
+}
+
 @media (max-width: 420px) {
     .headline {
         font-size: 40px;
@@ -178,9 +191,10 @@ body {
     }
 
     .greeting-image {
-        border-radius: 50%;
-        top: -70px;
-        left: calc(50% - 30px);
+        top: -50px;
+        left: -40px;
+        width: 50px;
+        height: 50px;
     }
 
     .button-container {
