@@ -34,12 +34,27 @@ body {
 
 .enclosed-container {
     width: 70%;
+    max-width: calc(1366px * 0.7);
 }
 
-@media (max-width: 420px) {
+@media (min-width: 280px) and (max-width: 475px) {
     .enclosed-container {
         width: 90%;
         max-width: calc(420px * 0.9);
+    }
+}
+
+@media (min-width: 475px) and (max-width: 768px) {
+    .enclosed-container {
+        width: 85%;
+        max-width: calc(768px * 0.85);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .enclosed-container {
+        width: 80%;
+        max-width: calc(1024px * 0.8);
     }
 }
 
@@ -72,6 +87,7 @@ body {
 
 .landing {
     height: 100vh;
+    max-height: 768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,31 +174,17 @@ body {
     background-color: #2ea63d;
 }
 
-@media (max-width: 320px) {
-    .enclosed-container {
-        width: 90%;
-        max-width: calc(320px * 0.9);
-    }
-
-    .landing {
-        height: 700px;
-    }
-}
-
-@media(min-width: 375px) {
-    #build::after {
-        content: "\a";
-        white-space: pre;
-    }
-}
-
-@media (max-width: 420px) {
+@media (min-width: 280px) and (max-width: 475px) {
     .headline {
         font-size: 40px;
     }
 
     .landing-container {
         width: 90%;
+        max-width: calc(420px * 0.9);
+    }
+
+    .menu-container {
         max-width: calc(420px * 0.9);
     }
 
@@ -206,9 +208,80 @@ body {
     .button {
         width: 70%;
         min-width: 120px;
+    }   
+}
+
+@media (height <= 533px) {
+    .landing {
+        height: 600px;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 768px) {
+    .headline {
+        font-size: 60px;
     }
 
+    .subtitle {
+        width: 80%;
+    }
+
+    #build::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .landing-container {
+        width: 85%;
+        max-width: calc(768px * 0.85);
+    }
+
+    .menu-container {
+        max-width: calc(768px * 0.85);
+    }
+
+    .greeting {
+        padding: var(--p1-5);
+    }
+
+    .greeting-image {
+        top: -50px;
+        left: -40px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .button-container {
+        width: 50%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 70%;
+        min-width: 120px;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .subtitle {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .subtitle {
+        width: 70%;
+        max-width: calc(1366px * 0.7 * 0.7);
+    }
+
+    #build::after {
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+
 
 
 
@@ -274,7 +347,7 @@ body {
 }
 
 
-@media (max-width: 420px) {
+@media (min-width: 280px) and (max-width: 768px) {
     .about-me {
         flex-direction: column;
     }
@@ -290,6 +363,7 @@ body {
     .about-me-information-container {
         width: 100%;
         text-align: center;
+        gap: 0px;
     }
 
     .chip-container {
@@ -373,9 +447,15 @@ body {
     align-items: center;
 }
 
-@media (max-width: 420px) {
+@media (min-width: 280px) and (max-width: 475px) {
     .project-item {
         width: 100%;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 1280px) {
+    .project-item {
+        width: calc(calc(100% - 16px) / 2);
     }
 }
 
@@ -391,10 +471,10 @@ body {
 }
 
 .footer-wrapper {
-    max-width: calc(1366px * 0.7);
     display: flex;
     flex-direction: column;
     gap: var(--p4);
+    
 }
 
 .footer-main-info-container {
@@ -458,7 +538,7 @@ body {
     gap: var(--p1);
 }
 
-@media (max-width: 420px) {
+@media (min-width: 280px) and (max-width: 1024px) {
     .footer-main-info-container {
         flex-direction: column;
         gap: var(--p2);
