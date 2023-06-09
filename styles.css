@@ -626,6 +626,12 @@ a {
     gap: var(--p1);
 }
 
+@media (max-width: 320px) {
+    .footer-additional-info-container {
+        display: none;
+    }
+}
+
 @media (min-width: 280px) and (max-width: 1024px) {
     .footer-main-info-container {
         flex-direction: column;
