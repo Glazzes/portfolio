@@ -10,3 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+const spanish = {
+    "greeting": "¡Hola! Soy Santiago 👋",
+    "build": "creo aplicaciones",
+    "app-type": " moviles & backend",
+    "subtitle": "Amo el reto conceptual de convertir ideas en realidad. Tengo un gran deseo de sobresalir y seguir mejorando como desarrollador de software.",
+    "view-projects": "Ver proyectos",
+    "available": "Disponible"
+}

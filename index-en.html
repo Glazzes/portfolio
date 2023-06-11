@@ -29,22 +29,23 @@
 
     <main class="container landing">
         <div class="enclosed-container landing-container">
-            <div id="greeting" class="greeting">
-                ¡Hola! Soy Santiago 👋
+            <div id="greeting" name="local" class="greeting">
+                Hi there! I'm Santiago 👋
                 <img src="./assets/images/me-2.png" class="greeting-image" />
             </div>
             <h1 class="headline">
-                <span id="build">creo aplicaciones</span><span> moviles y de servidor</span>
+                <span id="build" name="local">I build mobile &</span>
+                <span id="app-type" name="local"> backend applications</span>
             </h1>
-            <h4 id="subtitle" class="subtitle">
-                Amo el reto conceptual de convertir ideas en realidad. Tengo un gran deseo de 
-                sobresalir y seguir mejorando como desarrollador de software.
+            <h4 id="subtitle" name="local" class="subtitle">
+                I love the conceptual challenge of turning ideas into a reality, I have a deep desire
+                to excel and keep improving as a software developer.
             </h4>
             <div class="button-container">
-                <a id="view-projects" href="#projects" class="button view-projects-button">Ver proyectos</a>
+                <a id="view-projects" href="#projects" name="local" class="button view-projects-button">View Projects</a>
                 <div class="button available-container-button">
                     <div class="available-badge"></div>
-                    <span>Disponible</span>
+                    <span id="available" name="local">Available</span>
                 </div>
             </div>
         </div>
@@ -54,19 +55,17 @@
         <div class="enclosed-container about-me">
             <article class="skills-container">
                 <h2 class="about-me-headline">
-                    <span id="whoami">¿Quién soy? &</span><span>¿En que soy bueno?</span>
+                    <span id="whoami">Who am I? &</span><span>What am I good at?</span>
                 </h2>
                 <p class="about-me-information">
-                   ¡Soy Santiago! Un desarrollador de software enfocado en desarrollo web, en
-                   particular, desarrollo backend con Java, Spring Boot y su rico ecosistema de
-                   proyectos, además de desarrollo móvil con React Native. Estoy muy interesado
-                   en seguir buenas prácticas de código y procesos de ciclo de vida del software para crear
-                   software de calidad.
+                    I'm Santiago! A software developer focused on web development technologies, 
+                    in parcitular, backend development with Java and Spring Boot as well as mobile
+                    development with React Native. I'm very interested in following best coding practices and
+                    development processes in order to deliver high quality software.
                 </p>
                 <p class="about-me-information">
-                    Realmente encuentro satisfacción en el desarrollo de aplicaciones, desde interfaces
-                    de usuario encantadoras hasta la complejidad estructural de los micro servicios,
-                    siempre habrá retos increíbles que esperan ser resueltos.
+                    I do really find satisfaction on software development, from delightful user experiences
+                    to the complexity of microservices, there are awesome challenges waiting to be solved.
                 </p>
             </article>
             <div class="about-me-information-container">
@@ -82,9 +81,9 @@
                     <span class="chip">React Native</span>
                     <span class="chip">PostgreSQL</span>
                     <span class="chip">Docker</span>
-                    <span class="chip">Familiaridad con CI pipelines</span>
-                    <span class="chip">Familiaridad con cloud computing</span>
-                    <span class="chip">Familiaridad con kubernetes</span>
+                    <span class="chip">Familiar with CI pipelines</span>
+                    <span class="chip">Familiar with cloud computing</span>
+                    <span class="chip">Familiar with kubernetes</span>
                 </div>
             </div>
         </div>
@@ -93,25 +92,24 @@
 
     <section id="projects" class="container project-root">
         <div class="enclosed-container project-container">
-            <h2 class="projects-title">Proyectos</h2>
+            <h2 class="projects-title">Projects</h2>
             
             <div class="projects">
 
                 <div class="project-item project-item-green">
                     <div>
-                        <h4 class="project-name">Inicio de sesión por QR</h4>
+                        <h4 class="project-name">QR Code Login</h4>
                         <p class="project-description">
-                            Flujo de autenticacion construido sobre la arquitectura de Spring Security
-                            para asemejar la caracteristica de inicio de sesion por codigo QR como se
-                            ve en aplicaciones populares como WhatsApp o Telegram.
+                            Authentication flow built on top of Spring Security architecture to
+                            resemble QR code login feature as seen in many main stream apps.
                         </p>
                         <p class="project-description">
-                            Incluye aplicaciones web, movil y backend.
+                            Includes web application, mobile application and a backend application.
                         </p>
                         <div>
-                            <h4 class="project-technologies-title">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title">Technlogies used:</h4>
                             <div class="project-chip-container">
-                                <p class="project-description">Kotlin, Spring Boot, React Native, Redis, Docker y Oracle Cloud</p>
+                                <p class="project-description">Kotlin, Spring Boot, React Native, Redis, Docker and Oracle Cloud</p>
                             </div>
                         </div>
                     </div>
@@ -119,14 +117,14 @@
                     <div class="project-links-container">
                         <div class="project-link-container-divider green-divider"></div>
                         <a href="" target="_blank" class="project-link">
-                            <span>Video Explicativo</span>
+                            <span>Video Explanation</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
                         <a href="http://140.238.187.124/" target="_blank" class="project-link">
-                            <span>Pruebalo en vivo</span>
+                            <span>Live Demo</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -144,21 +142,21 @@
 
                 <div class="project-item project-item-black">
                     <div>
-                        <h4 class="project-name" style="color: #fff;">Kio Gestor de Archivos</h4>
+                        <h4 class="project-name" style="color: #fff;">Kio File Manager</h4>
                         <p class="project-description" style="color: #c0c0c0;">
-                            Gestor de archivos en la nube similar en funcionalidad a DropBox. Donde los
-                            usuarios pueden subir y descargar sus archivos, además de visualizarlos y
-                            compartirlos a través de la aplicación.
+                            Mobile file manager application, where users can store their files on a 
+                            remote server where they can upload, download, visualize and share them through
+                            the app.
                         </p>
                         <p class="project-description" style="color: #c0c0c0;">
-                            Incluye aplicaciones movil y backend.
+                            Includes a mobile application and a backend application.
                         </p>
 
                         <div>
-                            <h4 class="project-technologies-title" style="color: #fff;">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title" style="color: #fff;">Technlogies used:</h4>
                             <div class="project-chip-container">
                                 <p class="project-description" style="color: #c0c0c0;">
-                                    Kotlin, Spring Boot, React Native, Docker y AWS S3 (LocalStack)
+                                    Kotlin, Spring Boot, React Native, Docker and AWS S3 (LocalStack)
                                 </p>
                             </div>
                         </div>
@@ -167,21 +165,21 @@
                     <div class="project-links-container">
                         <div class="project-link-container-divider black-divider"></div>
                         <a href="https://github.com/Glazzes/kio-app#footage" target="_blank" class="project-link" style="color: #c0c0c0">
-                            <span>Ver Capturas</span>
+                            <span>See Screenshots</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
                         <a href="https://github.com/Glazzes/kio-app" target="_blank" class="project-link" style="color: #c0c0c0">
-                            <span>Github (Aplicación móvil)</span>
+                            <span>Github (Mobile app)</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
                         <a href="https://github.com/Glazzes/kio" target="_blank" class="project-link" style="color: #c0c0c0">
-                            <span>Github (Aplicación backend)</span>
+                            <span>Github (Backend app)</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -192,20 +190,19 @@
 
                 <div class="project-item project-item-purple">
                     <div>
-                        <h4 class="project-name">Autumn Contenedor DI</h4>
+                        <h4 class="project-name">Autumn DI Container</h4>
                         <p class="project-description">
-                            Librería de contenedor inyección de dependencias basada en el API
-                            vista en Spring Boot. Esta se creó utilizando solo el núcleo de Java
-                            para proveer la siguientes características: Detección de dependencias 
-                            ciclicas, cualificación de beans y soporte a builds multi
-                            a través de "Jar in Jar introspection" a las dependencias en el ClassPath.
+                            A dependency injection container library based on Spring Boot's API, 
+                            this one was made only with Java's core to provide the following features: 
+                            Circular dependency detection, bean quialification, multi project support through 
+                            "Jar in Jar inrospection" to project's dependencies.
                         </p>
 
                         <div>
-                            <h4 class="project-technologies-title">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title">Technlogies used:</h4>
                             <div class="project-chip-container">
                                 <p class="project-description">
-                                    Java y su API Reflection
+                                    Java and its Reflection API
                                 </p>
                             </div>
                         </div>
@@ -213,6 +210,13 @@
 
                     <div class="project-links-container">
                         <div class="project-link-container-divider purple-divider"></div>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Maven Central Page</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
                         <a href="https://github.com/Glazzes/autumn" target="_blank" class="project-link">
                             <span>Github</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
@@ -221,7 +225,7 @@
                             </svg>
                         </a>
                         <a href="https://github.com/Glazzes/autumnexample" target="_blank" class="project-link">
-                            <span>Github (Ejemplos de la libreria)</span>
+                            <span>Github (Library examples)</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -234,21 +238,16 @@
                     <div>
                         <h4 class="project-name">Movie REST API</h4>
                         <p class="project-description">
-                            API REST para el manejo de peliculas, usuarios y lista de favoritos aplicando
-                            los siguientes conceptos: localización, caching, integración continua, análisis
-                            de código estático, documentación de APIs, test unitarios y de integración y migración
-                            de bases de datos.
-                        </p>
-
-                        <p class="project-description">
-                            Incluye aplicaciones web y backend.
+                            REST API to manage movies, actors and reviews, applying a variaty of concepts:
+                            internationalization, cache, CI pipelines, static code analysis, API documentation,
+                            unit testing & integration testing and database migrations.
                         </p>
 
                         <div>
-                            <h4 class="project-technologies-title">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title">Technlogies used:</h4>
                             <div class="project-chip-container">
                                 <p class="project-description">
-                                    Java, Spring Boot, React Native, Docker, Github Actions y Docker
+                                    Java, Spring Boot, React Native, Docker, Github Actions, Docker and AWS S3 (LocalStack)
                                 </p>
                             </div>
                         </div>
@@ -257,7 +256,7 @@
                     <div class="project-links-container">
                         <div class="project-link-container-divider yellow-divider"></div>
                         <a href="" target="_blank" class="project-link">
-                            <span>Pruebalo en vivo</span>
+                            <span>Live Demo</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -277,18 +276,14 @@
                     <div>
                         <h4 class="project-name">Code Playground</h4>
                         <p class="project-description">
-                            API REST que permite a los usuarios ejecutar su código en cinco lenguajes
-                            de programación diferentes, incluyendo: Java, Python, JavaScript, Go y Bash.
-                            Este limita el uso de recursos al igual que el tiempo, este corre dentro de
-                            un contenedor de Docker para evitar que código malicioso afecte el sistema.
-                        </p>
-
-                        <p class="project-description">
-                            Incluye aplicaciones web y backend.
+                            REST API that allows users to run their code in five different programming languages,
+                            including Java, JS, Python, Go and Bash. This runner limits the resources as well as
+                            time. it runs within a docker container ensuring malicious code can not affect the system
+                            neither other user's code.
                         </p>
 
                         <div>
-                            <h4 class="project-technologies-title">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title">Technlogies used:</h4>
                             <div class="project-chip-container">
                                 <p class="project-description">
                                     Go, React Native and Docker
@@ -300,7 +295,7 @@
                     <div class="project-links-container">
                         <div class="project-link-container-divider green-divider"></div>
                         <a href="" target="_blank" class="project-link">
-                            <span>Pruebalo en vivo</span>
+                            <span>Live Demo</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -318,18 +313,18 @@
 
                 <div class="project-item project-item-black" name="hidden-project" style="display: none;">
                     <div>
-                        <h4 class="project-name" style="color: #fff;">RN Animaciones</h4>
+                        <h4 class="project-name" style="color: #fff;">RN Animations</h4>
                         <p class="project-description" style="color: #c0c0c0">
-                            Una colección de animaciones hechas en React Native usando Reanimated 2,
-                            Gesture Handler y Skia. Esta colección contiene animaciones basadas en 
-                            aplicaciones del mundo real, diseños de Dribbble y micro interacciones.
+                            A collection of React Native based animations using gesture handler, reanimated 2
+                            and skia, this one contains animations based of real world apps, dribble shots and
+                            micro interactions.
                         </p>
                         <p class="project-description" style="color: #c0c0c0;">
-                            Incluye capturas de pantalla y/o videos para cada animación (Dentro del repositorio de Github).
+                            Includes screenshots and/or videos for each animation (within the github repo).
                         </p>
 
                         <div>
-                            <h4 class="project-technologies-title" style="color: #fff;">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title" style="color: #fff;">Technlogies used:</h4>
                             <div class="project-chip-container">
                                 <p class="project-description" style="color: #c0c0c0;">
                                     React Native, Reanimated 2, Gesture Handler and Skia
@@ -353,10 +348,10 @@
                 <div class="project-item project-item-purple" name="hidden-project" style="display: none;">
                     <div>
                         <h4 class="project-name">Docker Gradle Plugin</h4>
-                        <p class="project-description">     
-                            Plugin para Gradle que añade las tres siguientes tareas a una build:
-                            crea un imagen de Docker usando un DockerFile, crea y ejecuta un contenedor
-                            al igual que publicar la imagen en un Docker registry de tu elección.
+                        <p class="project-description">
+                            Gradle plugin that adds the three following tasks to a gradle build: 
+                            build a docker image out of Dockerfile, create & run a container as well as 
+                            publishing images to a docker image registry.
                         </p>
 
                         <div>
@@ -372,6 +367,13 @@
                     <div class="project-links-container">
                         <div class="project-link-container-divider purple-divider"></div>
                         <a href="" target="_blank" class="project-link">
+                            <span>Gradle Plugin Portal Page</span>
+                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <g/><g/><g/><g/><g/><g/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="project-link">
                             <span>Github</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
@@ -382,7 +384,7 @@
                 </div>
 
                 <div id="load-more" class="project-item load-more">
-                    <span>cargar dos más</span>
+                    <p>2 more</p>
                     <svg enable-background="new 0 0 32 32" height="48" width="48" viewBox="0 0 32 32">
                         <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#fff" fill-rule="evenodd" id="Arrow_Forward"/>
                         <g/><g/><g/><g/><g/><g/>
@@ -409,7 +411,7 @@
                 </div>
         
                 <div>
-                    <p class="footer-title">Aptitudes</p>
+                    <p class="footer-title">Skills</p>
                     <p class="footer-item">Java</p>
                     <p class="footer-item">Kotlin</p>
                     <p class="footer-item">Spring Boot</p>
@@ -422,24 +424,24 @@
                     <p class="footer-item">React Native</p>
                     <p class="footer-item">Docker</p>
                     <p class="footer-item">CI pipelines (Github Actions)</p>
-                    <p class="footer-item">Y familiaridad con otras tecnologías</p>
+                    <p class="footer-item">And familiarity with other technologies</p>
                 </div>
 
                 <div>
-                    <p class="footer-title">¡Enviame un mensaje!</p>
+                    <p class="footer-title">Hit me up!</p>
                     <p class="footer-item">santiagop1@protonmail.com</p>
                 </div>
             </div>
     
             <div class="footer-additional-info-container">
                 <div>
-                    <p class="footer-title">A toda velocidad</p>
-                    <p class="footer-item">La tecnología está evolucionando, al igual que yo</p>
+                    <p class="footer-title">Pedal to the metal</p>
+                    <p class="footer-item">Technology is evolving, so am i</p>
                 </div>
                 <div class="made-by-container">
-                    <p class="footer-item">Hecho con</p>
+                    <p class="footer-item">Made with</p>
                     <svg class="icon" clip-rule="evenodd" fill-rule="evenodd" width="20" height="20" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#1a5aff" d="m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z" fill-rule="nonzero"/></svg>
-                    <p class="footer-item">tu servidor</p>
+                    <p class="footer-item">yours truly</p>
                 </div>
             </div>
         </div>
