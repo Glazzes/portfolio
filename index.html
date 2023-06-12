@@ -10,8 +10,8 @@
 </head>
 <body>
     <header class="container menu">
-        <nav class="container menu">
-            <div class="enclosed-container menu-container">
+        <nav class="enclosed-container menu">
+            <div class="menu menu-container">
                 <p class="name">Santiago<span>.</span></p>
                 <div class="social-container">
                     <a href="https://github.com/Glazzes" target="_blank">
@@ -54,7 +54,7 @@
         <div class="enclosed-container about-me">
             <article class="skills-container">
                 <h2 class="about-me-headline">
-                    <span id="whoami">¿Quién soy? &</span><span>¿En que soy bueno?</span>
+                    <span id="whoami">¿Quién soy? y</span><span>¿En que soy bueno?</span>
                 </h2>
                 <p class="about-me-information">
                    ¡Soy Santiago! Un desarrollador de software enfocado en desarrollo web, en
@@ -97,13 +97,54 @@
             
             <div class="projects">
 
+                <div class="featured-project">
+                    <img src="./assets/images/kio-banner.webp" />
+                    <div class="featured-project-info">
+                        <h4 class="project-name" style="color: #fff;">Kio Gestor de Archivos</h4>
+                        <p class="project-description" style="color: #c0c0c0;">
+                            Kio es un gestor de archivos en la nube con características similares a 
+                            DropBox o Google Drive. Donde los usuarios pueden registrarse, subir y 
+                            descargar sus archivos, además de visualizarlos y compartirlos a través 
+                            de la aplicación.
+                        </p>
+                        <p class="project-description" style="color: #c0c0c0;">
+                            Incluye aplicaciones movil y backend.
+                        </p>
+
+                        <div class="project-links-container">
+                            <div class="project-link-container-divider black-divider"></div>
+                            <a href="https://github.com/Glazzes/kio-app#footage" target="_blank" class="project-link" style="color: #c0c0c0">
+                                <span>Ver Capturas</span>
+                                <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                    <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
+                                    <g/><g/><g/><g/><g/><g/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Glazzes/kio-app" target="_blank" class="project-link" style="color: #c0c0c0">
+                                <span>Github (Aplicación móvil)</span>
+                                <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                    <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
+                                    <g/><g/><g/><g/><g/><g/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Glazzes/kio" target="_blank" class="project-link" style="color: #c0c0c0">
+                                <span>Github (Aplicación backend)</span>
+                                <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
+                                    <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
+                                    <g/><g/><g/><g/><g/><g/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-item project-item-green">
                     <div>
                         <h4 class="project-name">Inicio de sesión por QR</h4>
                         <p class="project-description">
                             Flujo de autenticacion construido sobre la arquitectura de Spring Security
                             para asemejar la caracteristica de inicio de sesion por codigo QR como se
-                            ve en aplicaciones populares como WhatsApp o Telegram.
+                            ve en aplicaciones populares como WhatsApp, Steam o Telegram.
                         </p>
                         <p class="project-description">
                             Incluye aplicaciones web, movil y backend.
@@ -119,21 +160,21 @@
                     <div class="project-links-container">
                         <div class="project-link-container-divider green-divider"></div>
                         <a href="" target="_blank" class="project-link">
-                            <span>Video Explicativo</span>
+                            <span>Video</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
                         <a href="http://140.238.187.124/" target="_blank" class="project-link">
-                            <span>Pruebalo en vivo</span>
+                            <span>Ir a la web</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
                         <a href="https://github.com/Glazzes/rn-spring-qr-login" target="_blank" class="project-link">
-                            <span>Github</span>
+                            <span>Github (Inlcuye tres proyectos)</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -142,48 +183,50 @@
                     </div>
                 </div>
 
-                <div class="project-item project-item-black">
+                <div class="project-item project-item-yellow">
                     <div>
-                        <h4 class="project-name" style="color: #fff;">Kio Gestor de Archivos</h4>
-                        <p class="project-description" style="color: #c0c0c0;">
-                            Gestor de archivos en la nube similar en funcionalidad a DropBox. Donde los
-                            usuarios pueden subir y descargar sus archivos, además de visualizarlos y
-                            compartirlos a través de la aplicación.
+                        <h4 class="project-name">Movie API REST</h4>
+                        <p class="project-description">
+                            API REST para el manejo de peliculas, usuarios y lista de favoritos aplicando
+                            los siguientes conceptos: localización, caching, integración continua, análisis
+                            de código estático, documentación de APIs, test unitarios y de integración y migración
+                            de bases de datos.
                         </p>
-                        <p class="project-description" style="color: #c0c0c0;">
-                            Incluye aplicaciones movil y backend.
+
+                        <p class="project-description">
+                            Incluye aplicaciones web y backend.
                         </p>
 
                         <div>
-                            <h4 class="project-technologies-title" style="color: #fff;">Tecnologías usadas:</h4>
+                            <h4 class="project-technologies-title">Tecnologías usadas:</h4>
                             <div class="project-chip-container">
-                                <p class="project-description" style="color: #c0c0c0;">
-                                    Kotlin, Spring Boot, React Native, Docker y AWS S3 (LocalStack)
+                                <p class="project-description">
+                                    Java, Spring Boot, React Native, Docker, Github Actions y Docker
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-links-container">
-                        <div class="project-link-container-divider black-divider"></div>
-                        <a href="https://github.com/Glazzes/kio-app#footage" target="_blank" class="project-link" style="color: #c0c0c0">
-                            <span>Ver Capturas</span>
+                        <div class="project-link-container-divider yellow-divider"></div>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Ir a la web</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
-                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
-                        <a href="https://github.com/Glazzes/kio-app" target="_blank" class="project-link" style="color: #c0c0c0">
-                            <span>Github (Aplicación móvil)</span>
+                        <a href="" target="_blank" class="project-link">
+                            <span>Github (Aplicación web)</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
-                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
-                        <a href="https://github.com/Glazzes/kio" target="_blank" class="project-link" style="color: #c0c0c0">
+                        <a href="" target="_blank" class="project-link">
                             <span>Github (Aplicación backend)</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
-                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#c0c0c0" fill-rule="evenodd" id="Arrow_Forward"/>
+                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
                             </svg>
                         </a>
@@ -222,49 +265,6 @@
                         </a>
                         <a href="https://github.com/Glazzes/autumnexample" target="_blank" class="project-link">
                             <span>Github (Ejemplos de la libreria)</span>
-                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
-                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
-                                <g/><g/><g/><g/><g/><g/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-item project-item-yellow">
-                    <div>
-                        <h4 class="project-name">Movie REST API</h4>
-                        <p class="project-description">
-                            API REST para el manejo de peliculas, usuarios y lista de favoritos aplicando
-                            los siguientes conceptos: localización, caching, integración continua, análisis
-                            de código estático, documentación de APIs, test unitarios y de integración y migración
-                            de bases de datos.
-                        </p>
-
-                        <p class="project-description">
-                            Incluye aplicaciones web y backend.
-                        </p>
-
-                        <div>
-                            <h4 class="project-technologies-title">Tecnologías usadas:</h4>
-                            <div class="project-chip-container">
-                                <p class="project-description">
-                                    Java, Spring Boot, React Native, Docker, Github Actions y Docker
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-links-container">
-                        <div class="project-link-container-divider yellow-divider"></div>
-                        <a href="" target="_blank" class="project-link">
-                            <span>Pruebalo en vivo</span>
-                            <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
-                                <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
-                                <g/><g/><g/><g/><g/><g/>
-                            </svg>
-                        </a>
-                        <a href="" target="_blank" class="project-link">
-                            <span>Github</span>
                             <svg enable-background="new 0 0 32 32" height="16" width="16" viewBox="0 0 32 32">
                                 <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#000" fill-rule="evenodd" id="Arrow_Forward"/>
                                 <g/><g/><g/><g/><g/><g/>
@@ -316,7 +316,7 @@
                     </div>
                 </div>
 
-                <div class="project-item project-item-black" name="hidden-project" style="display: none;">
+                <div class="project-item project-item-black">
                     <div>
                         <h4 class="project-name" style="color: #fff;">RN Animaciones</h4>
                         <p class="project-description" style="color: #c0c0c0">
@@ -332,7 +332,7 @@
                             <h4 class="project-technologies-title" style="color: #fff;">Tecnologías usadas:</h4>
                             <div class="project-chip-container">
                                 <p class="project-description" style="color: #c0c0c0;">
-                                    React Native, Reanimated 2, Gesture Handler and Skia
+                                    React Native y Reanimated 2
                                 </p>
                             </div>
                         </div>
@@ -350,7 +350,7 @@
                     </div>
                 </div>
 
-                <div class="project-item project-item-purple" name="hidden-project" style="display: none;">
+                <div class="project-item project-item-purple">
                     <div>
                         <h4 class="project-name">Docker Gradle Plugin</h4>
                         <p class="project-description">     
@@ -381,13 +381,6 @@
                     </div>
                 </div>
 
-                <div id="load-more" class="project-item load-more">
-                    <span>cargar dos más</span>
-                    <svg enable-background="new 0 0 32 32" height="48" width="48" viewBox="0 0 32 32">
-                        <path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#fff" fill-rule="evenodd" id="Arrow_Forward"/>
-                        <g/><g/><g/><g/><g/><g/>
-                    </svg>
-                </div>
             </div>
         </div>
     </section>

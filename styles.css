@@ -44,7 +44,7 @@ a {
 
 .enclosed-container {
     width: 70%;
-    max-width: 1366px;
+    max-width: calc(1366px * 0.7);
 }
 
 @media (min-width: 280px) and (max-width: 475px) {
@@ -312,6 +312,7 @@ a {
     width: 50%;
     display: flex;
     flex-direction: column;
+    gap: var(--p2);
 }
 
 .about-me-headline {
@@ -319,7 +320,7 @@ a {
     font-weight: 800;
     color: var(--bg-main);
     font-size: 40px;
-    margin: 0px;
+    margin: 0;
 }
 
 #whoami::after {
@@ -337,6 +338,7 @@ a {
 .about-me-information {
     font-family: var(--font);
     font-weight: 400;
+    margin: 0;
 }
 
 .chip-container {
@@ -416,6 +418,25 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     gap: var(--p2);
+}
+
+.featured-project {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: var(--p4);
+    background-color: #0a0a0a;
+    padding: var(--p4);
+    border-radius: 10px;
+}
+
+.featured-project img {
+    width: calc(50% - 16px);
+    border-radius: var(--p1);
+}
+
+.featured-project-info {
+    width: calc(50% - 16px);
 }
 
 .project-item {
@@ -532,11 +553,35 @@ a {
     .projects-title {
         text-align: center;
     }
+
+    .featured-project {
+        flex-direction: column;
+    }
+
+    .featured-project img {
+        width: 100%;
+    }
+
+    .featured-project-info {
+        width: 100%;
+    }
 }
 
 @media (min-width: 640px) and (max-width: 1280px) {
     .project-item {
         width: calc(calc(100% - 16px) / 2);
+    }
+
+    .featured-project {
+        flex-direction: column;
+    }
+
+    .featured-project img {
+        width: 100%;
+    }
+
+    .featured-project-info {
+        width: 100%;
     }
 }
 
