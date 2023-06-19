@@ -2,16 +2,22 @@
 
 :root {
     --font: 'Inter', sans-serif;
-    --bg-main: #070707;
+    --bg-main: #0f0f0f;
+    --button-bg-color: #1e1b1e;
+    --text-color-secondary: #b8b9ba;
+
     --bg-secondary: #fff;
     --text-main-color: #fff;
-    --text-color-secondary: #828282;
-    --chip-title-color: #1d1d00;
-    --about-bg-color: #effcf3;
-    --chip-text-color: #070707;
-    --button-bg-color: #1f1f1f;
-    --vibrant-color: #1a5aff;
+
+    --about-bg-color: #dfffef;
+    --about-title-color: #000;
+    --about-me-text-color: #000;
+    --chip-title-color: #000;
+    --chip-text-color: #000;
+
+    --vibrant-color: #5a4ff5;
     --project-bg: #ffffff;
+
     --p1: 8px;
     --p1-5: 12px;
     --p2: 16px;
@@ -318,7 +324,7 @@ a {
 .about-me-headline {
     font-family: var(--font);
     font-weight: 800;
-    color: var(--bg-main);
+    color: var(--about-title-color);
     font-size: 40px;
     margin: 0;
 }
@@ -339,6 +345,7 @@ a {
     font-family: var(--font);
     font-weight: 400;
     margin: 0;
+    color: var(--about-me-text-color);
 }
 
 .chip-container {
@@ -355,6 +362,7 @@ a {
     border-color: var(--chip-text-color);
     font-family: var(--font);
     font-weight: 400;
+    color: var(--chip-text-color);
 }
 
 
@@ -425,7 +433,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: var(--p4);
-    background-color: #0a0a0a;
+    background-color: #fadf7d;
     padding: var(--p4);
     border-radius: 10px;
 }
@@ -452,19 +460,24 @@ a {
 }
 
 .project-item-green {
-    background-color: #5fcca0;
+    background-color: #00c39a;
+    color: white;
 }
 
 .project-item-yellow {
-    background-color: #f9fd91;
+    background-color: #fadf7d;
 }
 
 .project-item-purple {
-    background-color: #cb9bfb;
+    background-color: #fe6d79;
+}
+
+.project-item-blue {
+    background-color: #6abfc9;
 }
 
 .project-item-black {
-    background-color: #0a0a0a;
+    background-color: var(--button-bg-color);
 }
 
 .project-name {
@@ -478,15 +491,19 @@ a {
     font-size: 14px;
     font-family: var(--font);
     font-weight: 800;
-    color: var(--chip-title-color);
+    color: #000;
     margin-bottom: 0px;
 }
 
 .project-description {
     font-family: var(--font);
     font-weight: 500;
-    color: var(--chip-title-color);
+    color: #000;
     font-size: 14px;
+}
+
+.project-description-black {
+    color: #000;
 }
 
 .project-chip-container {
@@ -500,6 +517,13 @@ a {
     display: flex;
     flex-direction: column;
     gap: var(--p1);
+}
+
+.link-hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
 }
 
 .project-link-container-divider {
@@ -531,6 +555,7 @@ a {
     text-decoration: none;
     font-size: 14px;
     color: #000;
+    text-decoration-line: underline;
 }
 
 .load-more {
