@@ -331,6 +331,7 @@ a {
     display: flex;
     gap: var(--p2);
     padding: var(--p4) 0px var(--p4) 0px;
+    align-items: center;
 }
 
 .skills-container {
@@ -369,6 +370,8 @@ a {
 
 .chip-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: var(--p2);
 }
